@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Vivira' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Vivira
+
+    pod 'Alamofire-SwiftyJSON'
+    pod 'Alamofire'
+    pod 'Kingfisher'
+
+  target 'ViviraTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ViviraUITests' do
+    # Pods for testing
+  end
+
+end

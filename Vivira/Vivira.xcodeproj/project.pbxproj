@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61059D3A8E0D57057159C419 /* Pods_ViviraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D32E5F2EB1C918D637A31B7 /* Pods_ViviraTests.framework */; };
 		6367A3D127DA61F300C94E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A3D027DA61F300C94E9E /* AppDelegate.swift */; };
 		6367A3D327DA61F300C94E9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A3D227DA61F300C94E9E /* SceneDelegate.swift */; };
 		6367A3D827DA61F300C94E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6367A3D627DA61F300C94E9E /* Main.storyboard */; };
 		6367A3DA27DA61F400C94E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6367A3D927DA61F400C94E9E /* Assets.xcassets */; };
 		6367A3DD27DA61F400C94E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6367A3DB27DA61F400C94E9E /* LaunchScreen.storyboard */; };
-		6367A3E827DA61F400C94E9E /* ViviraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A3E727DA61F400C94E9E /* ViviraTests.swift */; };
 		6367A3F227DA61F400C94E9E /* ViviraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A3F127DA61F400C94E9E /* ViviraUITests.swift */; };
 		6367A3F427DA61F400C94E9E /* ViviraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A3F327DA61F400C94E9E /* ViviraUITestsLaunchTests.swift */; };
+		6367A40A27DA720D00C94E9E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A40927DA720D00C94E9E /* SearchViewController.swift */; };
+		6367A40E27DA727900C94E9E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A40D27DA727900C94E9E /* NetworkManager.swift */; };
+		6367A41027DA76C100C94E9E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A40F27DA76C100C94E9E /* Constant.swift */; };
+		6367A41227DA841800C94E9E /* SearchRepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A41127DA841800C94E9E /* SearchRepositoryService.swift */; };
+		6367A41627DA8E3200C94E9E /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A41527DA8E3200C94E9E /* RepositoryModel.swift */; };
+		6367A41827DA957C00C94E9E /* SearchRepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A41727DA957C00C94E9E /* SearchRepositoryViewModel.swift */; };
+		6367A41F27DA96F900C94E9E /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A41D27DA96F900C94E9E /* RepositoryTableViewCell.swift */; };
+		6367A42027DA96F900C94E9E /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6367A41E27DA96F900C94E9E /* RepositoryTableViewCell.xib */; };
+		6367A42227DA97DF00C94E9E /* RepositoryTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A42127DA97DF00C94E9E /* RepositoryTableCellViewModel.swift */; };
+		6367A42427DBDCA600C94E9E /* MockSearchResult.json in Resources */ = {isa = PBXBuildFile; fileRef = 6367A42327DBDCA600C94E9E /* MockSearchResult.json */; };
+		6367A42B27DBDD5500C94E9E /* SearchViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A42A27DBDD5500C94E9E /* SearchViewControllerTest.swift */; };
+		6367A42D27DBDD6600C94E9E /* SearchViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A42C27DBDD6600C94E9E /* SearchViewModelTest.swift */; };
+		6367A42F27DBDE2400C94E9E /* MockSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367A42E27DBDE2400C94E9E /* MockSearchService.swift */; };
+		DE7B80AEE3FE6757D32D9A53 /* Pods_Vivira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A71F835BFCDDAF3E580F46 /* Pods_Vivira.framework */; };
+		E6A7FFB673C0B835A346D0AE /* Pods_Vivira_ViviraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0104704A644F3C07580EDB /* Pods_Vivira_ViviraUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23F30E3ED55824070AD6B14D /* Pods-ViviraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViviraTests.release.xcconfig"; path = "Target Support Files/Pods-ViviraTests/Pods-ViviraTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C0FC427A660FC6F3B9DE790 /* Pods-Vivira-ViviraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vivira-ViviraUITests.release.xcconfig"; path = "Target Support Files/Pods-Vivira-ViviraUITests/Pods-Vivira-ViviraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3058938BE5137A49B876A35C /* Pods-Vivira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vivira.release.xcconfig"; path = "Target Support Files/Pods-Vivira/Pods-Vivira.release.xcconfig"; sourceTree = "<group>"; };
+		3AE9D24A6B70DDF444FEF456 /* Pods-ViviraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViviraTests.debug.xcconfig"; path = "Target Support Files/Pods-ViviraTests/Pods-ViviraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6367A3CD27DA61F300C94E9E /* Vivira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vivira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6367A3D027DA61F300C94E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6367A3D227DA61F300C94E9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +62,27 @@
 		6367A3DC27DA61F400C94E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6367A3DE27DA61F400C94E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6367A3E327DA61F400C94E9E /* ViviraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViviraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6367A3E727DA61F400C94E9E /* ViviraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViviraTests.swift; sourceTree = "<group>"; };
 		6367A3ED27DA61F400C94E9E /* ViviraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViviraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6367A3F127DA61F400C94E9E /* ViviraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViviraUITests.swift; sourceTree = "<group>"; };
 		6367A3F327DA61F400C94E9E /* ViviraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViviraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6367A40927DA720D00C94E9E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6367A40D27DA727900C94E9E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6367A40F27DA76C100C94E9E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		6367A41127DA841800C94E9E /* SearchRepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryService.swift; sourceTree = "<group>"; };
+		6367A41527DA8E3200C94E9E /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
+		6367A41727DA957C00C94E9E /* SearchRepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryViewModel.swift; sourceTree = "<group>"; };
+		6367A41D27DA96F900C94E9E /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		6367A41E27DA96F900C94E9E /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		6367A42127DA97DF00C94E9E /* RepositoryTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableCellViewModel.swift; sourceTree = "<group>"; };
+		6367A42327DBDCA600C94E9E /* MockSearchResult.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockSearchResult.json; sourceTree = "<group>"; };
+		6367A42A27DBDD5500C94E9E /* SearchViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTest.swift; sourceTree = "<group>"; };
+		6367A42C27DBDD6600C94E9E /* SearchViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTest.swift; sourceTree = "<group>"; };
+		6367A42E27DBDE2400C94E9E /* MockSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchService.swift; sourceTree = "<group>"; };
+		99D6AEDB233A00E6D6EEAD5D /* Pods-Vivira-ViviraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vivira-ViviraUITests.debug.xcconfig"; path = "Target Support Files/Pods-Vivira-ViviraUITests/Pods-Vivira-ViviraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D32E5F2EB1C918D637A31B7 /* Pods_ViviraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViviraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0104704A644F3C07580EDB /* Pods_Vivira_ViviraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vivira_ViviraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA3E9A062FEB14354E5BD50 /* Pods-Vivira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vivira.debug.xcconfig"; path = "Target Support Files/Pods-Vivira/Pods-Vivira.debug.xcconfig"; sourceTree = "<group>"; };
+		E0A71F835BFCDDAF3E580F46 /* Pods_Vivira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vivira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7B80AEE3FE6757D32D9A53 /* Pods_Vivira.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61059D3A8E0D57057159C419 /* Pods_ViviraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A7FFB673C0B835A346D0AE /* Pods_Vivira_ViviraUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +120,8 @@
 				6367A3E627DA61F400C94E9E /* ViviraTests */,
 				6367A3F027DA61F400C94E9E /* ViviraUITests */,
 				6367A3CE27DA61F300C94E9E /* Products */,
+				93923CD003EBE327733E4A94 /* Pods */,
+				C87856588975FC8A23F63B0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,7 +148,10 @@
 		6367A3E627DA61F400C94E9E /* ViviraTests */ = {
 			isa = PBXGroup;
 			children = (
-				6367A3E727DA61F400C94E9E /* ViviraTests.swift */,
+				6367A42827DBDD0B00C94E9E /* Stub */,
+				6367A42627DBDCF900C94E9E /* Service */,
+				6367A42527DBDCEF00C94E9E /* Module */,
+				6367A42327DBDCA600C94E9E /* MockSearchResult.json */,
 			);
 			path = ViviraTests;
 			sourceTree = "<group>";
@@ -154,6 +198,8 @@
 		6367A40327DA6F5D00C94E9E /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				6367A40C27DA725A00C94E9E /* Search */,
+				6367A40B27DA721F00C94E9E /* Base */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -161,6 +207,7 @@
 		6367A40427DA6F7900C94E9E /* Common  */ = {
 			isa = PBXGroup;
 			children = (
+				6367A40F27DA76C100C94E9E /* Constant.swift */,
 			);
 			path = "Common ";
 			sourceTree = "<group>";
@@ -178,6 +225,7 @@
 		6367A40627DA6FAA00C94E9E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6367A41527DA8E3200C94E9E /* RepositoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +233,8 @@
 		6367A40727DA6FB400C94E9E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				6367A41727DA957C00C94E9E /* SearchRepositoryViewModel.swift */,
+				6367A42127DA97DF00C94E9E /* RepositoryTableCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,8 +242,82 @@
 		6367A40827DA6FC000C94E9E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6367A40927DA720D00C94E9E /* SearchViewController.swift */,
+				6367A41D27DA96F900C94E9E /* RepositoryTableViewCell.swift */,
+				6367A41E27DA96F900C94E9E /* RepositoryTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6367A40B27DA721F00C94E9E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6367A40D27DA727900C94E9E /* NetworkManager.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6367A40C27DA725A00C94E9E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6367A41127DA841800C94E9E /* SearchRepositoryService.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		6367A42527DBDCEF00C94E9E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				6367A42927DBDD1800C94E9E /* Search */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		6367A42627DBDCF900C94E9E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6367A42E27DBDE2400C94E9E /* MockSearchService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6367A42827DBDD0B00C94E9E /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		6367A42927DBDD1800C94E9E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6367A42A27DBDD5500C94E9E /* SearchViewControllerTest.swift */,
+				6367A42C27DBDD6600C94E9E /* SearchViewModelTest.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		93923CD003EBE327733E4A94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEA3E9A062FEB14354E5BD50 /* Pods-Vivira.debug.xcconfig */,
+				3058938BE5137A49B876A35C /* Pods-Vivira.release.xcconfig */,
+				99D6AEDB233A00E6D6EEAD5D /* Pods-Vivira-ViviraUITests.debug.xcconfig */,
+				2C0FC427A660FC6F3B9DE790 /* Pods-Vivira-ViviraUITests.release.xcconfig */,
+				3AE9D24A6B70DDF444FEF456 /* Pods-ViviraTests.debug.xcconfig */,
+				23F30E3ED55824070AD6B14D /* Pods-ViviraTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C87856588975FC8A23F63B0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0A71F835BFCDDAF3E580F46 /* Pods_Vivira.framework */,
+				BB0104704A644F3C07580EDB /* Pods_Vivira_ViviraUITests.framework */,
+				9D32E5F2EB1C918D637A31B7 /* Pods_ViviraTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +327,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6367A3F727DA61F400C94E9E /* Build configuration list for PBXNativeTarget "Vivira" */;
 			buildPhases = (
+				14D04E9F4FD00F7636B0AEFF /* [CP] Check Pods Manifest.lock */,
 				6367A3C927DA61F300C94E9E /* Sources */,
 				6367A3CA27DA61F300C94E9E /* Frameworks */,
 				6367A3CB27DA61F300C94E9E /* Resources */,
+				8750D3D6CBA25DE4C6C2C2EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +346,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6367A3FA27DA61F400C94E9E /* Build configuration list for PBXNativeTarget "ViviraTests" */;
 			buildPhases = (
+				B121303AA5FA06447CF1BCA0 /* [CP] Check Pods Manifest.lock */,
 				6367A3DF27DA61F400C94E9E /* Sources */,
 				6367A3E027DA61F400C94E9E /* Frameworks */,
 				6367A3E127DA61F400C94E9E /* Resources */,
@@ -238,9 +365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6367A3FD27DA61F400C94E9E /* Build configuration list for PBXNativeTarget "ViviraUITests" */;
 			buildPhases = (
+				4C350F1566F276F07F6C5F29 /* [CP] Check Pods Manifest.lock */,
 				6367A3E927DA61F400C94E9E /* Sources */,
 				6367A3EA27DA61F400C94E9E /* Frameworks */,
 				6367A3EB27DA61F400C94E9E /* Resources */,
+				5434E3306428AFD39C6C8C79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,6 +432,7 @@
 				6367A3DD27DA61F400C94E9E /* LaunchScreen.storyboard in Resources */,
 				6367A3DA27DA61F400C94E9E /* Assets.xcassets in Resources */,
 				6367A3D827DA61F300C94E9E /* Main.storyboard in Resources */,
+				6367A42027DA96F900C94E9E /* RepositoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6367A42427DBDCA600C94E9E /* MockSearchResult.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,13 +453,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14D04E9F4FD00F7636B0AEFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vivira-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C350F1566F276F07F6C5F29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vivira-ViviraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5434E3306428AFD39C6C8C79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vivira-ViviraUITests/Pods-Vivira-ViviraUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vivira-ViviraUITests/Pods-Vivira-ViviraUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vivira-ViviraUITests/Pods-Vivira-ViviraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8750D3D6CBA25DE4C6C2C2EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vivira/Pods-Vivira-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vivira/Pods-Vivira-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vivira/Pods-Vivira-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B121303AA5FA06447CF1BCA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViviraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6367A3C927DA61F300C94E9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6367A41F27DA96F900C94E9E /* RepositoryTableViewCell.swift in Sources */,
+				6367A40E27DA727900C94E9E /* NetworkManager.swift in Sources */,
+				6367A40A27DA720D00C94E9E /* SearchViewController.swift in Sources */,
+				6367A42227DA97DF00C94E9E /* RepositoryTableCellViewModel.swift in Sources */,
+				6367A41027DA76C100C94E9E /* Constant.swift in Sources */,
+				6367A41227DA841800C94E9E /* SearchRepositoryService.swift in Sources */,
+				6367A41827DA957C00C94E9E /* SearchRepositoryViewModel.swift in Sources */,
 				6367A3D127DA61F300C94E9E /* AppDelegate.swift in Sources */,
 				6367A3D327DA61F300C94E9E /* SceneDelegate.swift in Sources */,
+				6367A41627DA8E3200C94E9E /* RepositoryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +578,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6367A3E827DA61F400C94E9E /* ViviraTests.swift in Sources */,
+				6367A42D27DBDD6600C94E9E /* SearchViewModelTest.swift in Sources */,
+				6367A42B27DBDD5500C94E9E /* SearchViewControllerTest.swift in Sources */,
+				6367A42F27DBDE2400C94E9E /* MockSearchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +746,7 @@
 		};
 		6367A3F827DA61F400C94E9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA3E9A062FEB14354E5BD50 /* Pods-Vivira.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -529,6 +774,7 @@
 		};
 		6367A3F927DA61F400C94E9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3058938BE5137A49B876A35C /* Pods-Vivira.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -556,6 +802,7 @@
 		};
 		6367A3FB27DA61F400C94E9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AE9D24A6B70DDF444FEF456 /* Pods-ViviraTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -580,6 +827,7 @@
 		};
 		6367A3FC27DA61F400C94E9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F30E3ED55824070AD6B14D /* Pods-ViviraTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -604,6 +852,7 @@
 		};
 		6367A3FE27DA61F400C94E9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99D6AEDB233A00E6D6EEAD5D /* Pods-Vivira-ViviraUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -626,6 +875,7 @@
 		};
 		6367A3FF27DA61F400C94E9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0FC427A660FC6F3B9DE790 /* Pods-Vivira-ViviraUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

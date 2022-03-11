@@ -1,0 +1,6 @@
+framework module Pods_Vivira_ViviraUITests {
+  umbrella header "Pods-Vivira-ViviraUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
