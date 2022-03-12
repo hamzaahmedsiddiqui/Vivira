@@ -2,7 +2,7 @@
 //  RepositoryTableViewCell.swift
 //  Vivira
 //
-//  Created by Hamza Khan on 10/03/2022.
+//  Created by Hamza Ahmed on 10/03/2022.
 //
 
 import UIKit
@@ -25,19 +25,19 @@ class RepositoryTableViewCell: UITableViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-    private func configCell(){
-        avatarImageView.kf.setImage(
+    
+    private func configCell() {
+        avatarImageView.kf.setImage (
             with: cellViewModel.getImageLink(),
             placeholder:UIImage(named: placeholderImage),
             options:[.cacheOriginalImage]
         )
+        
         repositoryTitleLabel.text = cellViewModel.getRepositoryTitle()
         repositoryNameLabel.text = cellViewModel.getRepositoryName()
         ownerNameLabel.text = cellViewModel.getOwnerName()
         repositoryUrlLabel.text = cellViewModel.getRepositoryLink()
         repositoryDescriptionLabel.text = cellViewModel.getRepositoryDescription()
     }
-    
 }

@@ -2,7 +2,7 @@
 //  RepositoryTableCellViewModel.swift
 //  Vivira
 //
-//  Created by Hamza Khan on 10/03/2022.
+//  Created by Hamza Ahmed on 10/03/2022.
 //
 
 import Foundation
@@ -11,24 +11,25 @@ import Foundation
 struct RepositoryTableCellViewModel{
     
     let repository: Item
-  
     func getImageLink()->URL {
         
         return URL(string: repository.owner!.avatarURL!)!
     }
+    
     func getOwnerName()-> String {
         return repository.owner!.login ?? ""
         
     }
+    
     func getRepositoryName()->String {
         return repository.name ?? ""
     }
     
-    func getRepositoryTitle()->String{
+    func getRepositoryTitle()->String {
         return repository.fullName ?? ""
     }
     
-    func getRepositoryDescription()->String{
+    func getRepositoryDescription()->String {
         return repository.itemDescription ?? ""
         
     }

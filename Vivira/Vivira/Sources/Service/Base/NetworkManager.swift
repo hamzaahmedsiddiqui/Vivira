@@ -10,9 +10,8 @@ import Alamofire
 import Alamofire_SwiftyJSON
 import SwiftyJSON
 
-protocol NetworkManager{
+protocol NetworkManager {
     func requestData(endpoint: String, parameters: [String: Any], httpMethod: HTTPMethod, completionHandler: @escaping ( Swift.Result<JSON, Error>) -> Void)
-    
 }
 
 
@@ -20,7 +19,7 @@ protocol NetworkManager{
 /**
  API call function for fetching search result
  */
-final class NetworkManagerImplementation:NetworkManager{
+final class NetworkManagerImplementation:NetworkManager {
     private let baseURL = "\(Constant.baseUrl)"
     func requestData(endpoint: String, parameters: [String: Any], httpMethod: HTTPMethod, completionHandler: @escaping ( Swift.Result<JSON, Error>) -> Void) {
         

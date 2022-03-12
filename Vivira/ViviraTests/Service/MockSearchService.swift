@@ -2,7 +2,7 @@
 //  MockSearchService.swift
 //  ViviraTests
 //
-//  Created by Hamza Khan on 11/03/2022.
+//  Created by Hamza Ahmed on 11/03/2022.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  ViviraUITestsLaunchTests.swift
 //  ViviraUITests
 //
-//  Created by Hamza Khan on 10/03/2022.
+//  Created by Hamza Ahmed on 10/03/2022.
 //
 
 import XCTest
