@@ -18,14 +18,13 @@ class SearchViewController: UIViewController {
             tableView.register(nib, forCellReuseIdentifier: Constant.RepositoryTableCellIdentifier)
         }
     }
-    @IBOutlet weak var searchBar:UISearchBar!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     lazy private var viewModel : SearchViewModel = {
         let service = SearchServiceImplementation()
         let viewModel = SearchViewModelImplementation(service: service)
         return viewModel
     }()
-    private var repositoryArray:[Item] = []
     private var activityIndicator = UIActivityIndicatorView(style: .large)
     private var totalPages = 1
     private var currentPage = 1
@@ -50,18 +49,15 @@ extension SearchViewController{
     
     private func getSearchData(searchText:String, pageNo:Int) {
         activityIndicator.startAnimating()
+      
         viewModel.didUpdateSearchResult(searchText: searchText, pageNo: pageNo) {[weak self] result in
-            
             switch result {
             case .success(_):
-                
-                self?.repositoryArray = self!.viewModel.getRepositoryArray()
                 self?.tableView.reloadData()
                 self?.activityIndicator.stopAnimating()
                 break
             case .failure(let error):
-                self?.showAlert(title: "Error", message: "Unable to search repository")
-                print(error.localizedDescription)
+              self?.showAlert(title: "Error", message: error.localizedDescription)
                 self?.activityIndicator.stopAnimating()
             }
         }
@@ -75,26 +71,36 @@ extension SearchViewController: UISearchBarDelegate
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         guard let searchText = searchBar.text, searchText != "" else {
-            self.showAlert(title: "Search field empty", message: "")
+            self.showAlert(title: "Error", message: "Search field empty")
             return
         }
-        currentPage = 1
-        getSearchData(searchText: searchText, pageNo: currentPage)
-        self.searchText = searchText
+        if Reachability.isConnectedToNetwork(){
+            /*
+             Internet Connection Available!
+             */
+            currentPage = 1
+            getSearchData(searchText: searchText, pageNo: currentPage)
+            self.searchText = searchText
+        }else{
+            /*
+             Internet Connection Not Available!
+             */
+            self.showAlert(title: "Error", message: "Internet Connection not Available!")
+        }
     }
 }
 
 // MARK: - UITableViewDelegate
 
-extension SearchViewController:UITableViewDelegate {
+extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.repositoryArray.count
+      return self.viewModel.getRepositoryArray().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constant.RepositoryTableCellIdentifier, for: indexPath) as! RepositoryTableViewCell
-        let cellViewModel = self.viewModel.cellViewModelForRow(row: indexPath.row)
+        let cellViewModel = self.viewModel.cellViewModel(for: indexPath.row)
         cell.cellViewModel = cellViewModel
         return cell
     }
@@ -104,7 +110,7 @@ extension SearchViewController:UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == viewModel.getRepositoryArrayCount() - 1{
+      if indexPath.row == viewModel.getRepositoryArray().count - 1{
             totalPages = viewModel.getPageCount()
             if currentPage != totalPages
             {

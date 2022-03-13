@@ -23,15 +23,12 @@ final class NetworkManagerImplementation:NetworkManager {
     private let baseURL = "\(Constant.baseUrl)"
     func requestData(endpoint: String, parameters: [String: Any], httpMethod: HTTPMethod, completionHandler: @escaping ( Swift.Result<JSON, Error>) -> Void) {
         
-        
-        
         let urlString = baseURL + endpoint
-        
         let serviceRequest = request(urlString, method: httpMethod, parameters: parameters, encoding: URLEncoding.default)
         
         serviceRequest.responseSwiftyJSON { (response) in
             
-            if response.error == nil{
+            if response.error == nil {
                 guard let data = response.value else { return }
                 
                 guard let statusCode = response.response?.statusCode
@@ -45,12 +42,11 @@ final class NetworkManagerImplementation:NetworkManager {
                 else if statusCode != StatusCode.success.rawValue{
                     completionHandler(.failure(NetworkError.generic))
                 }
-                else{
+                else {
                     completionHandler(.success(data))
                 }
-                
             }
-            else{
+            else {
                 completionHandler(.failure(NetworkError.generic))
             }
             
