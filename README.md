@@ -10,7 +10,7 @@ Application uses the git search API to searcch the repositories  and shows the r
 
 
 - Clone the repository.
-https://github.com/hamzaahmedsiddiqui/Evenly.git
+https://github.com/hamzaahmedsiddiqui/Vivira.git
 
 - Run the app in xcode after cloning.
 
