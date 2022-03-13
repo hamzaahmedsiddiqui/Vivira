@@ -2,9 +2,10 @@
 
 Application uses the git search API to searcch the repositories  and shows the results in a table. Table support pagination so you can scroll until the last item. 
 
-# API Details: https://docs.github.com/en/rest/reference/search
+##API Details: 
+https://docs.github.com/en/rest/reference/search
 
-## Prerequisites
+## Prerequisites:
 - Xcode 13
 - iOS 15.0+ 
 - support iPhone and iPad
