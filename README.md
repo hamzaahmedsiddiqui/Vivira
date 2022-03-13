@@ -10,9 +10,6 @@ Application uses the git search API to searcch the repositories  and shows the r
 
 
 - Clone the repository.
-
-
-```sh
 https://github.com/hamzaahmedsiddiqui/Evenly.git
 
 - Run the app in xcode after cloning.
