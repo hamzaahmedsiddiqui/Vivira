@@ -1,4 +1,5 @@
-# Vivira
+
+![vivira](https://user-images.githubusercontent.com/38706039/158077521-eda7ffa7-802a-4853-b0ea-c1f04a0f56e4.png)
 
 Application uses the git search API to searcch the repositories  and shows the results in a table. Table support pagination so you can scroll until the last item. 
 
@@ -9,6 +10,7 @@ API Details: https://docs.github.com/en/rest/reference/search
 - iOS 15.0+ 
 - support iPhone and iPad
 - support portrait and landscape layout
+
 
 
 - Clone the repository.
